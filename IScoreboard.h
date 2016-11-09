@@ -54,5 +54,10 @@ class IScoreboard
   	 *  every period
   	 */
 	virtual void clearScoreboard()=0;
+	{
+		int i,j;
+		for(i=0; i<m_competitor; i++)
+			for(j=0; j<m_period; j++) score[i][j] = 0;
+	}
 };
 #endif /* ISCOREBOARD_H_ */
